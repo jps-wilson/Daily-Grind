@@ -14,7 +14,10 @@ body {
     color: #EDE3D1;
     font-family: "Assistant", sans-serif; /* Custom font with fall back */
 }
-
+.menu img {
+    border-radius: 30%;
+    
+}
 .menu {
     overflow: hidden;
     background-color: #EDE3D1;
@@ -23,13 +26,11 @@ body {
     padding-right: 1rem;
     padding-bottom: 0rem;
 }
-
 .menu ul {
     list-style-type: none;
     display: inline-flex;
     gap: 1.5rem;
 }
-
 .menu a {
     text-decoration: none;
     color: #4A2D2A;
@@ -45,8 +46,6 @@ body {
     font-family: "Assistant", sans-serif;
     outline: none;
 }
-
-
 h1 {
     font-family: "Montserrat Underline", sans-serif;
     padding-left: 3rem;
