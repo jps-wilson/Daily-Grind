@@ -16,12 +16,15 @@ body {
 }
 .menu img {
     border-radius: 30%;
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    padding-top: 1rem;
     
 }
 .menu {
-    overflow: hidden;
     background-color: #EDE3D1;
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 0rem;
@@ -30,6 +33,7 @@ body {
     list-style-type: none;
     display: inline-flex;
     gap: 1.5rem;
+    padding-top: 2rem;
 }
 .menu a {
     text-decoration: none;
@@ -37,6 +41,10 @@ body {
     font-family: "Assistant", sans-serif;
 }
 .menu a:hover {
+    text-decoration: underline;
+}
+ul .current {
+    font-weight: bold;
     text-decoration: underline;
 }
 .menu input {
