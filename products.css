@@ -1,0 +1,14 @@
+.top-bar {
+    display: grid;
+    grid-auto-flow: column; /* Arrange items in columns, creates a single row */
+    gap: 10rem; /* Adds space between columns */
+    padding: 1rem; /* Adds 1rem unit of padding around the .top-bar */
+    background-color: #4A2D2A;
+    color: #EDE3D1;
+}
+
+.menu {
+    overflow: hidden;
+    background-color: #EDE3D1;
+    padding: 1rem;
+}
