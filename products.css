@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&display=swap'); /* Importing custom fonts from google fonts */
+
+body {
+    background-color: #EDE3D1;
+    margin: 0;
+    padding: 0;
+}
+.top-bar {
+    display: grid;
+    grid-auto-flow: column; /* Arrange items in columns, creates a single row */
+    padding: 0.25rem 3.5rem; /* Adds 1rem unit of padding around the .top-bar */
+    justify-content: space-between;
+    background-color: #4A2D2A;
+    color: #EDE3D1;
+    font-family: "Assistant", sans-serif; /* Custom font with fall back */
+}
+.menu img {
+    border-radius: 30%;
+    
+}
+.menu {
+    overflow: hidden;
+    background-color: #EDE3D1;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0rem;
+}
+.menu ul {
+    list-style-type: none;
+    display: inline-flex;
+    gap: 1.5rem;
+}
+.menu a {
+    text-decoration: none;
+    color: #4A2D2A;
+    font-family: "Assistant", sans-serif;
+}
+.menu a:hover {
+    text-decoration: underline;
+}
+.menu input {
+    background-color: #EDE3D1;
+    border: none;
+    color: grey;
+    font-family: "Assistant", sans-serif;
+    outline: none;
+}
+h1 {
+    font-family: "Montserrat Underline", sans-serif;
+    padding-left: 3rem;
+    padding-top: 0;
+    color: #4A2D2A;
+    font-size: 6rem;
+    font-weight: 500; 
+}
