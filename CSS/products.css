@@ -15,10 +15,10 @@ body {
     font-family: "Assistant", sans-serif; /* Custom font with fall back */
 }
 .menu img {
-    border-radius: 30%;
+    border-radius: 50%;
     display: block;
     margin: 0 auto;
-    width: 30%;
+    width: 25%;
     padding-top: 1rem;
     
 }
@@ -34,6 +34,7 @@ body {
     display: inline-flex;
     gap: 1.5rem;
     padding-top: 2rem;
+    margin-bottom: 0.25rem;
 }
 .menu a {
     text-decoration: none;
@@ -54,11 +55,55 @@ ul .current {
     font-family: "Assistant", sans-serif;
     outline: none;
 }
+hr {
+    margin-top: 0;
+}
 h1 {
     font-family: "Montserrat Underline", sans-serif;
-    padding-left: 3rem;
+    margin-left: 3rem;
+    margin-top: -0.5rem;
     padding-top: 0;
     color: #4A2D2A;
     font-size: 6rem;
     font-weight: 500; 
+}
+.description {
+    font-family: "Assistant", sans-serif;
+    margin-left: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -6rem;
+    color: #4A2D2A;
+}
+
+/* .sorting {
+    margin-left: 3rem;
+} */
+.filters {
+    margin-left: 3rem;
+    display: inline-flex;
+    gap: 1.5rem;
+    font-family: "Assistant", sans-serif;
+    color: #4A2D2A;
+}
+.filters h5 {
+    text-decoration: underline;
+    font-family: "Assistant", sans-serif;
+    color: #7D8451;
+}
+.categories {
+    margin-left: 3rem;
+    margin-top: -2rem;
+    font-family: "Assistant", sans-serif;
+    color: #4A2D2A;
+}
+.categories input[type="checkbox"] {
+    background-color: #EDE3D1;
+    margin: 0;
+    font: inherit;
+    color: #4A2D2A;
+    width: 1.15rem;
+    height: 1.15rem;
+    border: 0.15rem currentColor;
+    border-radius: 0.15rem;
 }
