@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&display=swap');
 /* This is the code for the background color */
 body {
-    background-color: #EDE301;
+    background-color: #EDE3D1;
     margin: 0;
     padding: 0;
 }
@@ -12,7 +12,7 @@ body {
     padding: 0.25rem 3.5rem; /*Adds padding around the .top-bar */
     justify-content: space-between;
     background-color: #4A2D2A;
-    color: #EDE301;
+    color: #EDE3D1;
     font-family: "Assistant", sans-serif; /* Custom font with fall back */
 }
 .menu img {
@@ -23,7 +23,7 @@ body {
     padding-top: 1rem;
 }
 .menu {
-    background-color: #EDE301;
+    background-color: #EDE3D1;
     padding-top: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
