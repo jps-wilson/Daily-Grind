@@ -1,0 +1,60 @@
+/* This is the code for importing the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&display=swap');
+/* This is the code for the background color */
+body {
+    background-color: #EDE301;
+    margin: 0;
+    padding: 0;
+}
+.top-bar {
+    display: grid;
+    grid-auto-flow: column; /* Arranges items in columns, creates a single row */
+    padding: 0.25rem 3.5rem; /*Adds padding around the .top-bar */
+    justify-content: space-between;
+    background-color: #4A2D2A;
+    color: #EDE301;
+    font-family: "Assistant", sans-serif; /* Custom font with fall back */
+}
+.menu img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    padding-top: 1rem;
+}
+.menu {
+    background-color: #EDE301;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0rem;
+}
+.menu ul {
+    list-style-type: none;
+    display: inline-flex;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    margin-bottom: 0.25rem;
+}
+.menu a {
+    text-decoration: none;
+    color: #4A2D2A;
+    font-family: "Assistant", sans-serif;
+}
+.menu a:hover {
+    text-decoration: underline;
+}
+ul .current {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.menu input {
+    background-color: #EDE3D1;
+    border: none;
+    color: grey;
+    font-family: "Assistant", sans-serif;
+    outline: none;
+}
+hr {
+    margin-top: 0;
+}
