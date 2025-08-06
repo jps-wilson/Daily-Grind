@@ -107,3 +107,29 @@ h1 {
     border: 0.15rem currentColor;
     border-radius: 0.15rem;
 }
+/* Styling for product cards below - incomplete code  */
+.wrapper {
+    height: 420px; /* change to rem */
+    width: 654px;
+    margin: 50px auto;
+    border-radius: 7px 7px 7px 7px;
+}
+.product-img {
+  float: left;
+  height: 420px;
+  width: 327px;
+}
+.product-img img {
+  border-radius: 7px 0 0 7px;
+}
+
+
+
+
+.product-price-btn {
+  height: 103px;
+  width: 327px;
+  margin-top: 17px;
+  position: relative;
+}
+
