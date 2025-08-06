@@ -106,30 +106,106 @@ h1 {
     height: 1.15rem;
     border: 0.15rem currentColor;
     border-radius: 0.15rem;
+    box-shadow: 0px 14px 32px rgba(0, 0, 0, 0.15);
 }
-/* Styling for product cards below - incomplete code  */
 .wrapper {
-    height: 420px; /* change to rem */
-    width: 654px;
-    margin: 50px auto;
-    border-radius: 7px 7px 7px 7px;
+    display: flex;
+    margin: 50px auto 50px 50px;
+    border-radius: 7px;
+    transform: scale(0.9);
+    transform-origin: top left;
 }
 .product-img {
-  float: left;
-  height: 420px;
-  width: 327px;
+   float: left;
+   height: 300px;
+   width: 400px; 
 }
 .product-img img {
-  border-radius: 7px 0 0 7px;
+    border-radius: 7px 0 0 7px;
 }
-
-
-
-
+.product-info {
+    float: left;
+    height: 300px;
+    width: 400px;
+    border-radius: 0 7px 7px 0;
+    background-color: white;
+}
+.product-text {
+    height: auto; /* Lets content define height */
+    width: 327px; 
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+.product-text h1 {
+    margin: 0 0 0 38px;
+    padding-top: 52px;
+    font-size: 34px;
+    color: #474747;
+}
+.product-text h1,
+.product-price-btn p {
+    font-family: "Montserrat Underline", sans-serif;
+}
+.product-text h2 {
+    margin: 0 0 47px 38px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #d2d2d2;
+    letter-spacing: 0.2em;
+}
+.product-text p {
+    height: 125px;
+    margin: 5px 0 0 38px;
+    font-family: 'Assistant', sans-serif;
+    color: #8d8d8d;
+    line-height: 1.7em;
+    font-size: 15px;
+    overflow: hidden;
+}
 .product-price-btn {
-  height: 103px;
-  width: 327px;
-  margin-top: 17px;
-  position: relative;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 25px 25px 0 5px;
+    padding-top: 10px;
+    
 }
 
+.product-price-btn p {
+    margin: 10px 0 0 30px;
+    font-family: 'Assistant', sans-serif;
+    font-size: 28px;
+    color: #CB6D51;
+}
+
+.product-price-btn span {
+    display: inline-block;
+    height: 50px;
+    font-family: 'Assistant', serif;
+    font-size: 34px;
+}
+
+.product-price-btn button {
+    height: 45px;
+    width: 150px;
+    border: none;
+    border-radius: 60px;
+    font-family: 'Assistant', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #4A2D2A;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-price-btn button:hover {
+    background-color: #7D8451;
+}
