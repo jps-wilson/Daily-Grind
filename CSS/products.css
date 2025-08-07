@@ -270,3 +270,10 @@ h1 {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+        /* Desktop */
+@media (min-width: 1024px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
