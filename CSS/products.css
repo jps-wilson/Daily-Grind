@@ -1,31 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&display=swap'); /* Importing custom fonts from google fonts */
 
 :root {
+    /* === Colors === */
     --bg-color: #EDE3D1;
     --cream: #EDE3D1;
     --brown: #4A2D2A;
     --green: #7D8451;
     --orange: #CB6D51;
-    --text: "Assistant", sans-serif;
-    --title: "Montserrat Underline", sans-serif;
     --card-roast-text: grey;
     --card-bg: #fff;
     --card-text: #8d8d8d;
+
+    /* === Typography === */
+    --text: "Assistant", sans-serif;
+    --title: "Montserrat Underline", sans-serif;
+
+    /* 
+    === Spacing ===
+    --space-xs: 0.25rem
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 3.5rem;
+    */
 }
 
+/* ======  GLOBAL RESET  ====== */
 body {
-    background-color: var(--bg-color);
     margin: 0;
     padding: 0;
+    font-family: var(--text);
+    color: var(--brown);
+    background-color: var(--bg-color);
 }
+/* ====== HEADER / TOP BAR ====== */
 .top-bar {
     display: grid;
     grid-auto-flow: column; /* Layout columns in a single horizontal row */
     justify-content: space-between; /* Spread items across the row */
-    padding: 0.25rem 3.5rem; /* Top/bottom: 0.25rem , Left/right: 3.5rem */
     background-color: var(--brown);
     color: var(--bg-color);
-    font-family: var(--text, sans-serif); /* Add a fallback just in case */
+    font-family: var(--text, sans-serif); 
+    padding: 0.25rem 3.5rem; /* Top/bottom: 0.25rem , Left/right: 3.5rem */
+   
+}
+.menu a,
+.menu input,
+.filters,
+.categories,
+.product-text p,
+.product-price-btn p {
+    font-family: var(--text);
+}
+.menu {
+    background-color: var(--bg-color);
+    padding: 1rem;
 }
 .menu img {
     border-radius: 50%;
@@ -33,13 +62,6 @@ body {
     margin: 0 auto;
     width: 25%;
     padding-top: 1rem; 
-}
-.menu {
-    background-color: var(--bg-color);
-    padding-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 0rem;
 }
 .menu ul {
     list-style-type: none;
@@ -64,7 +86,6 @@ ul .current {
     background-color: var(--bg-color);
     border: none;
     color: var(--card-roast-text);
-    font-family: var(--text);
     outline: none;
 }
 .header-right {
@@ -103,7 +124,6 @@ h1 {
 .filters {
     display: inline-flex;
     gap: 1.5rem;
-    font-family: var(--text);
     color: var(--brown);
 }
 .filters h5 {
@@ -114,7 +134,6 @@ h1 {
 .categories {
     margin-left: 0;
     margin-top: -2rem;
-    font-family: var(--text);
     color: var(--brown);
     display: flex;
     flex-direction: row;
@@ -138,9 +157,6 @@ h1 {
     margin-right: 0.5rem;
 }
 .product-info {
-    /* float: left;
-    height: 300px; -> removing fixed sizes
-    width: 400px; */
     border-radius: 0 7px 7px 0;
     background-color: var(--card-bg);
     width: 100%; /* Let flex/grid control width */
@@ -179,7 +195,6 @@ h1 {
 }
 .product-text p {
     margin: 5px 0 0 38px;
-    font-family: var(--text);
     color: var(--card-text);
     line-height: 1.7em;
     font-size: 15px;
@@ -195,7 +210,6 @@ h1 {
 }
 .product-price-btn p {
     margin: 0;
-    font-family: var(--text);
     font-size: 28px;
     color: var(--orange);
 }
@@ -259,59 +273,79 @@ h1 {
 }
 
 /* ============ MEDIA QUERIES ============ */
+
+        /* Mobile and Tablet Styles */
+@media (max-width: 1023px) {
+    .top-bar,
+    .menu {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
         /* Mobile Styles */
 @media (max-width: 767px) {
     .top-bar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0.5rem 1rem;
-        font-size: 0.95rem;
-        text-align: center;
-        gap: 0.25rem;
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        padding: 0.25rem 1rem;
+        background-color: var(--brown);
+        color: var(--bg-color);
+        font-family: var(--text, sans-serif);
+    }
+    .menu {
+        background-color: var(--bg-color);
+        padding: 1rem;
     }
     .wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
-    margin: 2rem;
-} 
-  .product-card {
-    flex-direction: column;
-    max-width: 95vw;
-  }
-  .product-img, .product-info {
-    width: 100%;
-  }
-  h1 {
-    font-size: 2.5rem;
-    margin-left: 1rem;
-  }
-  .description {
-    grid-template-columns: 1fr;
-    margin-left: 1rem;
-    margin-top: 0;
-  }
-  .filters-row {
-    margin-left: 1rem;
-    gap: 1rem;
-  }
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+        margin: 2rem;
+    }
+    .product-card {
+        flex-direction: column;
+        max-width: 95vw;
+    } 
+    .product-img, .product-info {
+        width: 100%;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 1rem;
+    }
+    .description {
+        grid-template-columns: 1fr;
+        margin-left: 1rem;
+        margin-top: 0;
+    }
+    .filters-row {
+        margin-left: 1rem;
+        gap: 1rem;
+    }
 }
         /* Tablet Styles */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .wrapper {
+    .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin: 2rem;
-  }
-  .product-card {
+    }
+    .product-card {
     max-width: 100%;
-  }
+    }
+}
+@media (min-width: 768px) {
+    .top-bar { padding: 0.25rem 2rem; }
+    .menu { padding: 2rem 1rem 0; }
 }
 
         /* Desktop Styles */
 @media (min-width: 1024px) {
+    .top-bar { padding: 0.25rem 3.5rem; }
+    .menu { padding: 2rem 3.5rem 0; }
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
