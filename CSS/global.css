@@ -77,14 +77,12 @@ hr {
 
 /* Centered Logo Styling */
 .hero-logo {
-     border-radius: 50%;
+    border-radius: 50%;
     display: block;
     margin: 0 auto;
     width: 25%;
     padding-top: 1rem;
-    left: 50%;
-    right: 50%;
-    transform: translate(-20%, -20%);
+
 }
 
 .hero-logo img {
@@ -93,6 +91,8 @@ hr {
     height: auto;
     border-radius: 50%;
     justify-content: center;
+     margin-bottom: 70px;
+    
     
 }
 
