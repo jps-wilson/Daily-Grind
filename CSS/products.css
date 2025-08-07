@@ -33,8 +33,7 @@ body {
     display: block;
     margin: 0 auto;
     width: 25%;
-    padding-top: 1rem;
-    
+    padding-top: 1rem; 
 }
 .menu {
     background-color: var(--bg-color);
@@ -95,10 +94,6 @@ h1 {
     margin-top: -6rem;
     color: var(--brown);
 }
-
-/* .sorting {
-    margin-left: 3rem;
-} */
 .filters {
     margin-left: 3rem;
     display: inline-flex;
