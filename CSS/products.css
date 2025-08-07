@@ -21,12 +21,12 @@ body {
 }
 .top-bar {
     display: grid;
-    grid-auto-flow: column; /* Arrange items in columns, creates a single row */
-    padding: 0.25rem 3.5rem; /* Adds 1rem unit of padding around the .top-bar */
-    justify-content: space-between;
+    grid-auto-flow: column; /* Layout columns in a single horizontal row */
+    justify-content: space-between; /* Spread items across the row */
+    padding: 0.25rem 3.5rem; /* Top/bottom: 0.25rem , Left/right: 3.5rem */
     background-color: var(--brown);
     color: var(--bg-color);
-    font-family: var(--text); /* Custom font with fall back */
+    font-family: var(--text, sans-serif); /* Add a fallback just in case */
 }
 .menu img {
     border-radius: 50%;
