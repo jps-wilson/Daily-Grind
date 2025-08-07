@@ -10,7 +10,6 @@
     --title: "Montserrat Underline", sans-serif;
     --card-roast-text: grey;
     --card-bg: #fff;
-    --card-title-text: #474747;
     --card-text: #8d8d8d;
 }
 
@@ -172,7 +171,7 @@ h1 {
     margin: 0 0 0 38px;
     padding-top: 52px;
     font-size: 34px;
-    color: var(--card-title-text);
+    color: var(--brown);
     text-transform: uppercase;
 }
 .product-text h1,
