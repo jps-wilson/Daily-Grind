@@ -114,5 +114,81 @@ hr {
     z-index: 5;
     
 }
+/* categories*/
+
+.categories-section {
+  background-color: #e9dbc5; /* Light beige */
+  text-align: center;
+  padding: 4rem 2rem;
+  font-family: sans-serif;
+}
+
+.categories-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.categories-description {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #333;
+}
+
+.shop-all-btn {
+  background-color: #b15e42;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+  border: 1px solid #3b2d2b;
+  transition: background-color 0.3s ease;
+}
+
+.shop-all-btn:hover {
+  background-color: #a04f35;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.category-item {
+  background-color: white;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.category-item:hover {
+  transform: translateY(-5px);
+}
+
+.category-item img {
+  width: 100%;
+  height: 250px;
+  display: block;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.category-item h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+
+
+
+
 
 
