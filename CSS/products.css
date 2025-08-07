@@ -1,31 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&display=swap'); /* Importing custom fonts from google fonts */
 
 :root {
+    /* === Colors === */
     --bg-color: #EDE3D1;
     --cream: #EDE3D1;
     --brown: #4A2D2A;
     --green: #7D8451;
     --orange: #CB6D51;
-    --text: "Assistant", sans-serif;
-    --title: "Montserrat Underline", sans-serif;
     --card-roast-text: grey;
     --card-bg: #fff;
     --card-text: #8d8d8d;
+
+    /* === Typography === */
+    --text: "Assistant", sans-serif;
+    --title: "Montserrat Underline", sans-serif;
+
+    /* 
+    === Spacing ===
+    --space-xs: 0.25rem
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 3.5rem;
+    */
 }
 
+/* ======  GLOBAL RESET  ====== */
 body {
-    background-color: var(--bg-color);
     margin: 0;
     padding: 0;
+    font-family: var(--text);
+    color: var(--brown);
+    background-color: var(--bg-color);
 }
+/* ====== HEADER / TOP BAR ====== */
 .top-bar {
     display: grid;
     grid-auto-flow: column; /* Layout columns in a single horizontal row */
     justify-content: space-between; /* Spread items across the row */
-    padding: 0.25rem 3.5rem; /* Top/bottom: 0.25rem , Left/right: 3.5rem */
     background-color: var(--brown);
     color: var(--bg-color);
-    font-family: var(--text, sans-serif); /* Add a fallback just in case */
+    font-family: var(--text, sans-serif); 
+    padding: 0.25rem 3.5rem; /* Top/bottom: 0.25rem , Left/right: 3.5rem */
+   
+}
+.menu a,
+.menu input,
+.filters,
+.categories,
+.product-text p,
+.product-price-btn p {
+    font-family: var(--text);
+}
+.menu {
+    background-color: var(--bg-color);
+    padding: 1rem;
 }
 .menu img {
     border-radius: 50%;
@@ -33,13 +62,6 @@ body {
     margin: 0 auto;
     width: 25%;
     padding-top: 1rem; 
-}
-.menu {
-    background-color: var(--bg-color);
-    padding-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 0rem;
 }
 .menu ul {
     list-style-type: none;
@@ -64,7 +86,6 @@ ul .current {
     background-color: var(--bg-color);
     border: none;
     color: var(--card-roast-text);
-    font-family: var(--text);
     outline: none;
 }
 .header-right {
@@ -103,7 +124,6 @@ h1 {
 .filters {
     display: inline-flex;
     gap: 1.5rem;
-    font-family: var(--text);
     color: var(--brown);
 }
 .filters h5 {
@@ -114,7 +134,6 @@ h1 {
 .categories {
     margin-left: 0;
     margin-top: -2rem;
-    font-family: var(--text);
     color: var(--brown);
     display: flex;
     flex-direction: row;
@@ -137,40 +156,26 @@ h1 {
     margin-bottom: 0;
     margin-right: 0.5rem;
 }
-/* .wrapper {
-    display: flex;
-    margin: 50px auto 50px 50px;
-    border-radius: 7px;
-    transform: scale(0.9);
-    transform-origin: top left;
-}
-.product-img {
-   float: left;
-   height: 300px;
-   width: 400px; 
-   margin-left: 30px;
-}
-.product-img img {
-    border-radius: 7px 0 0 7px;
-} */
 .product-info {
-    float: left;
-    height: 300px;
-    width: 400px;
     border-radius: 0 7px 7px 0;
     background-color: var(--card-bg);
+    width: 100%; /* Let flex/grid control width */
+    height: auto; /* Let content define height */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .product-text {
-    height: auto; /* Lets content define height */
-    width: 327px; 
-    padding-bottom: 20px;
+    width: 100%;
+    padding-bottom: 10px;
     background-color: var(--card-bg);
     box-sizing: border-box;
 }
 .product-text h1 {
     margin: 0 0 0 38px;
-    padding-top: 52px;
-    font-size: 34px;
+    padding-top: 24px;
+    font-size: 28px;
     color: var(--brown);
     text-transform: uppercase;
 }
@@ -180,7 +185,7 @@ h1 {
 }
 .product-text h2 {
     margin: 0 0 47px 38px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     font-size: 13px;
     font-family: var(--text);
     font-weight: 400;
@@ -189,26 +194,22 @@ h1 {
     letter-spacing: 0.2em;
 }
 .product-text p {
-    height: 125px;
     margin: 5px 0 0 38px;
-    font-family: var(--text);
     color: var(--card-text);
     line-height: 1.7em;
     font-size: 15px;
-    overflow: hidden;
 }
 .product-price-btn {
     display: flex;
     gap: 40px;
     justify-content: flex-start;
-    align-items: center;
-    margin: 25px 25px 0 5px;
+    align-items: flex-start;
+    margin: 25px 25px 0 25px;
     padding-top: 10px;
-    
+    padding-bottom: 10px;
 }
 .product-price-btn p {
     margin: 0;
-    font-family: var(--text);
     font-size: 28px;
     color: var(--orange);
 }
@@ -238,70 +239,113 @@ h1 {
 }
 .product-card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 2rem;
     background: var(--card-bg);
     border-radius: 7px;
     overflow: hidden;
-    max-width: 800px;
     width: 100%;
+    min-height: unset;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+.product-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 .product-img, .product-info {
-    width: 50%;
+    width: 100%;
     min-width: 0;
 }
 .product-img img {
     width: 100%;
-    height: auto;
+    height: 220px;
+    object-fit: cover;
     border-radius: 0;
+}
+.product-text h1,
+.product-text h2,
+.product-text p {
+    margin-left: 18px;
 }
 
 /* ============ MEDIA QUERIES ============ */
+
+        /* Mobile and Tablet Styles */
+@media (max-width: 1023px) {
+    .top-bar,
+    .menu {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
         /* Mobile Styles */
 @media (max-width: 767px) {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
-  .product-card {
-    flex-direction: column;
-    max-width: 95vw;
-  }
-  .product-img, .product-info {
-    width: 100%;
-  }
-  h1 {
-    font-size: 2.5rem;
-    margin-left: 1rem;
-  }
-  .description {
-    grid-template-columns: 1fr;
-    margin-left: 1rem;
-    margin-top: 0;
-  }
-  .filters-row {
-    margin-left: 1rem;
-    gap: 1rem;
-  }
+    .top-bar {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        padding: 0.25rem 1rem;
+        background-color: var(--brown);
+        color: var(--bg-color);
+        font-family: var(--text, sans-serif);
+    }
+    .menu {
+        background-color: var(--bg-color);
+        padding: 1rem;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+        margin: 2rem;
+    }
+    .product-card {
+        flex-direction: column;
+        max-width: 95vw;
+    } 
+    .product-img, .product-info {
+        width: 100%;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 1rem;
+    }
+    .description {
+        grid-template-columns: 1fr;
+        margin-left: 1rem;
+        margin-top: 0;
+    }
+    .filters-row {
+        margin-left: 1rem;
+        gap: 1rem;
+    }
 }
         /* Tablet Styles */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .wrapper {
+    .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin: 2rem;
-  }
-  .product-card {
+    }
+    .product-card {
     max-width: 100%;
-  }
+    }
+}
+@media (min-width: 768px) {
+    .top-bar { padding: 0.25rem 2rem; }
+    .menu { padding: 2rem 1rem 0; }
 }
 
         /* Desktop Styles */
 @media (min-width: 1024px) {
+    .top-bar { padding: 0.25rem 3.5rem; }
+    .menu { padding: 2rem 3.5rem 0; }
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
