@@ -55,6 +55,12 @@ ul .current {
     font-family: "Assistant", sans-serif;
     outline: none;
 }
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
 hr {
     margin-top: 0;
 }
