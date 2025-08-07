@@ -138,15 +138,20 @@ h1 {
     margin-right: 0.5rem;
 }
 .product-info {
-    float: left;
-    height: 300px;
-    width: 400px;
+    /* float: left;
+    height: 300px; -> removing fixed sizes
+    width: 400px; */
     border-radius: 0 7px 7px 0;
     background-color: var(--card-bg);
+    width: 100%; /* Let flex/grid control width */
+    height: auto; /* Let content define height */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .product-text {
-    height: auto; /* Lets content define height */
-    width: 327px; 
+    width: 100%;
     padding-bottom: 20px;
     background-color: var(--card-bg);
     box-sizing: border-box;
@@ -173,13 +178,11 @@ h1 {
     letter-spacing: 0.2em;
 }
 .product-text p {
-    height: 125px;
     margin: 5px 0 0 38px;
     font-family: var(--text);
     color: var(--card-text);
     line-height: 1.7em;
     font-size: 15px;
-    overflow: hidden;
 }
 .product-price-btn {
     display: flex;
