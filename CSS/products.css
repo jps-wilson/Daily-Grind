@@ -175,21 +175,18 @@ h1 {
     padding-top: 10px;
     
 }
-
 .product-price-btn p {
     margin: 10px 0 0 30px;
     font-family: 'Assistant', sans-serif;
     font-size: 28px;
     color: #CB6D51;
 }
-
 .product-price-btn span {
     display: inline-block;
     height: 50px;
     font-family: 'Assistant', serif;
     font-size: 34px;
 }
-
 .product-price-btn button {
     height: 45px;
     width: 150px;
@@ -205,7 +202,6 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 .product-price-btn button:hover {
     background-color: #7D8451;
 }
