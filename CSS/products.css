@@ -119,6 +119,7 @@ h1 {
    float: left;
    height: 300px;
    width: 400px; 
+   margin-left: 30px;
 }
 .product-img img {
     border-radius: 7px 0 0 7px;
@@ -176,7 +177,7 @@ h1 {
     
 }
 .product-price-btn p {
-    margin: 10px 0 0 30px;
+    margin: 0;
     font-family: 'Assistant', sans-serif;
     font-size: 28px;
     color: #CB6D51;
