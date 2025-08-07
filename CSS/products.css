@@ -10,7 +10,6 @@
     --title: "Montserrat Underline", sans-serif;
     --card-roast-text: grey;
     --card-bg: #fff;
-    --card-title-text: #474747;
     --card-text: #8d8d8d;
 }
 
@@ -21,20 +20,19 @@ body {
 }
 .top-bar {
     display: grid;
-    grid-auto-flow: column; /* Arrange items in columns, creates a single row */
-    padding: 0.25rem 3.5rem; /* Adds 1rem unit of padding around the .top-bar */
-    justify-content: space-between;
+    grid-auto-flow: column; /* Layout columns in a single horizontal row */
+    justify-content: space-between; /* Spread items across the row */
+    padding: 0.25rem 3.5rem; /* Top/bottom: 0.25rem , Left/right: 3.5rem */
     background-color: var(--brown);
     color: var(--bg-color);
-    font-family: var(--text); /* Custom font with fall back */
+    font-family: var(--text, sans-serif); /* Add a fallback just in case */
 }
 .menu img {
     border-radius: 50%;
     display: block;
     margin: 0 auto;
     width: 25%;
-    padding-top: 1rem;
-    
+    padding-top: 1rem; 
 }
 .menu {
     background-color: var(--bg-color);
@@ -95,12 +93,14 @@ h1 {
     margin-top: -6rem;
     color: var(--brown);
 }
-
-/* .sorting {
+.filters-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
     margin-left: 3rem;
-} */
+    margin-top: 1rem;
+}
 .filters {
-    margin-left: 3rem;
     display: inline-flex;
     gap: 1.5rem;
     font-family: var(--text);
@@ -110,16 +110,16 @@ h1 {
     text-decoration: underline;
     font-family: var(--text);
     color: var(--green);
-    /* testing */
 }
 .categories {
-    margin-left: 3rem;
+    margin-left: 0;
     margin-top: -2rem;
     font-family: var(--text);
     color: var(--brown);
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
 }
 .categories input[type="checkbox"] {
     background-color: var(--bg-color);
@@ -130,12 +130,12 @@ h1 {
     height: 1.15rem;
     border: 0.15rem currentColor;
     border-radius: 0.15rem;
-    box-shadow: 0px 14px 32px rgba(0, 0, 0, 0.15);
     margin-right: 0.5rem;
 }
 .categories label {
-    display: block;
-    margin-bottom: 0.5rem;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 0.5rem;
 }
 .wrapper {
     display: flex;
@@ -171,7 +171,7 @@ h1 {
     margin: 0 0 0 38px;
     padding-top: 52px;
     font-size: 34px;
-    color: var(--card-title-text);
+    color: var(--brown);
     text-transform: uppercase;
 }
 .product-text h1,
