@@ -188,9 +188,10 @@ h1 {
     display: flex;
     gap: 40px;
     justify-content: flex-start;
-    align-items: center;
-    margin: 25px 25px 0 5px;
+    align-items: flex-start;
+    margin: 25px 25px 0 25px;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 .product-price-btn p {
     margin: 0;
@@ -260,12 +261,21 @@ h1 {
 /* ============ MEDIA QUERIES ============ */
         /* Mobile Styles */
 @media (max-width: 767px) {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
+    .top-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        font-size: 0.95rem;
+        text-align: center;
+        gap: 0.25rem;
+    }
+    .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin: 2rem;
+} 
   .product-card {
     flex-direction: column;
     max-width: 95vw;
