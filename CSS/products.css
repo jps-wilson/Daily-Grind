@@ -191,7 +191,6 @@ h1 {
     align-items: center;
     margin: 25px 25px 0 5px;
     padding-top: 10px;
-    
 }
 .product-price-btn p {
     margin: 0;
@@ -225,13 +224,16 @@ h1 {
 }
 .product-card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 2rem;
     background: var(--card-bg);
     border-radius: 7px;
     overflow: hidden;
     width: 100%;
-    min-height: 280px;
+    min-height: unset;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .product-img {
     display: flex;
@@ -240,7 +242,7 @@ h1 {
     overflow: hidden;
 }
 .product-img, .product-info {
-    width: 50%;
+    width: 100%;
     min-width: 0;
 }
 .product-img img {
