@@ -163,6 +163,7 @@ h1 {
     padding-top: 52px;
     font-size: 34px;
     color: var(--card-title-text);
+    text-transform: uppercase;
 }
 .product-text h1,
 .product-price-btn p {
