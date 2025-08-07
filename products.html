@@ -20,9 +20,14 @@
                 <li><a href="products.html" class="current">Shop</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact Us</a></li>
-                <i class="fa fa-search"> <input type="text" placeholder="Search..."></i>
-                <li><a href="#" class="login">Login</a></li>
             </ul>
+            <div class="header-right">
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <a href="#" class="login">Login</a>
+            </div>
         </nav>
         <hr>
         <main>
@@ -30,12 +35,6 @@
             <section class="description">
                 <p>Whether you're into smooth, chocolatey blends or bright,fruity single origin, we've got beans for every taste. Roasted in small batches for freshness, delivered straight to your door.</p>
             </section>
-            <!-- <section class="sorting">
-                <p>Showing 6 Products</p>
-                
-                   - Put code in here for a dropdown menu with the value set to "Sort By" -> see figma template for further info - 
-
-            </section> -->
             <section class="filters">
                 <h4>Filters</h4>
                 <h5>Clear Filters</h5>
@@ -47,24 +46,42 @@
                 <input type="checkbox" name="dark"> <label for="dark">Dark Roast</label>                
                 <input type="checkbox" name="sale"> <label for="sale">Sale</label>                
             </section>
-            <section class="cards">
-                <div class="wrapper">
-                    <div class="product-img">
-                        <img src="images/first-light.jpg" alt="" width="500" height="400">
+            <div class="wrapper">
+                <div class="product-img">
+                    <img src="images/first-light.jpg" alt="Daily Grind coffee bean bag with orange vertical text displaying FIRST LIGHT on the right" height="300" width="400" >
+                </div>
+                <div class="product-info">
+                    <div class="product-text">
+                        <h1>First Light</h1>
+                        <h2>Light Roast</h2>
+                        <p>First Light is a delicate, bright roast crafted to capture the essence of morning’s first rays. 
+                            These beans are lightly roasted to preserve their natural character, resulting in a vibrant, 
+                            smooth cup with floral aromatics and a crisp, citrusy brightness. Notes of honey, sweet almond, 
+                            and a hint of apricot make each sip feel like a gentle awakening.</p>
                     </div>
-                    <div class="product-info">
-                        <div class="product-text">
-                            <h2></h2>
-                            <h3></h3>
-                            <p></p>
-                        </div>
-                        <div class="product-price-btn">
-                            <p><span>19.99</span>$</p>
-                            <button type="button">BUY NOW</button>
-                        </div>
+                    <div class="product-price-btn">
+                        <p><span>19.99</span>$</p>
+                        <button type="button">buy now</button>
                     </div>
                 </div>
-            </section>
+                <div class="product-img">
+                    <img src="images/first-light.jpg" alt="Daily Grind coffee bean bag with orange vertical text displaying FIRST LIGHT on the right" height="300" width="400" >
+                </div>
+                <div class="product-info">
+                    <div class="product-text">
+                        <h1>First Light</h1>
+                        <h2>Light Roast</h2>
+                        <p>First Light is a delicate, bright roast crafted to capture the essence of morning’s first rays. 
+                            These beans are lightly roasted to preserve their natural character, resulting in a vibrant, 
+                            smooth cup with floral aromatics and a crisp, citrusy brightness. Notes of honey, sweet almond, 
+                            and a hint of apricot make each sip feel like a gentle awakening.</p>
+                    </div>
+                    <div class="product-price-btn">
+                        <p><span>19.99</span>$</p>
+                        <button type="button">buy now</button>
+                    </div>
+                </div>
+            </div>
         </main>
     </body>
 </html>
