@@ -137,7 +137,7 @@ h1 {
     margin-bottom: 0;
     margin-right: 0.5rem;
 }
-.wrapper {
+/* .wrapper {
     display: flex;
     margin: 50px auto 50px 50px;
     border-radius: 7px;
@@ -152,7 +152,7 @@ h1 {
 }
 .product-img img {
     border-radius: 7px 0 0 7px;
-}
+} */
 .product-info {
     float: left;
     height: 300px;
@@ -236,7 +236,26 @@ h1 {
 .product-price-btn button:hover {
     background-color: var(--green);
 }
+.product-card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    background: var(--card-bg);
+    border-radius: 7px;
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+}
 
+.product-img, .product-info {
+    width: 50%;
+    min-width: 0;
+}
+.product-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
 
 /* ============ MEDIA QUERIES ============ */
         /* Mobile */
