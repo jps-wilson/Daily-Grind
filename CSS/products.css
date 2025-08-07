@@ -239,7 +239,7 @@ h1 {
 
 
 /* ============ MEDIA QUERIES ============ */
-/* Mobile */
+        /* Mobile */
 @media (max-width: 767px) {
     .menu ul {
         flex-direction: column;
@@ -263,4 +263,10 @@ h1 {
         width: 100%;
         margin-top: 10px;
     }
+}
+        /* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }
