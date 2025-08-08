@@ -185,6 +185,96 @@ hr {
   margin: 0;
 }
 
+/*add more css styling for body*/
+
+
+/* Footer Styling */
+
+/* Footer Wrapper (newsletter +footer) */
+.footer-wrapper {
+    background-color: #f6ecdb; /* Same cream tone as footer */
+    padding: 40px 20px;
+}
+
+/* Newsletter section */
+.newsletter {
+    max-width: 1100px;
+    margin: 0 auto 40px auto; /* space below before footer links */
+}
+
+.newsletter h3 {
+    font-size: 1.8rem;
+    color: #4a2c2a;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    color: #5a4a4a;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.newsletter form {
+    display: flex;
+    gap: 10px;
+    max-width: 500px;
+}
+
+.newsletter input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.newsletter button {
+    background-color: #4a2c2a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #6b3e3b;
+}
+
+/* Footer links grid */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-grid h4 {
+    font-size: 1.2rem;
+    color: #4a2c2a;
+    margin-bottom: 15px;
+}
+
+.footer-grid p {
+    color: #7b6f6f;
+    margin: 6px 0;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.footer-grid p:hover {
+    color: #4a2c2a;
+}
+
+/* Copyright bar */
+.copyright {
+    background-color: #4a2c2a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
 
 
 
