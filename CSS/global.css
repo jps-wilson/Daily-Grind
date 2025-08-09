@@ -117,10 +117,10 @@ hr {
 /* categories*/
 
 .categories-section {
-  background-color: #e9dbc5; /* Light beige */
+  background-color: #EDE3D1; /* Light beige */
   text-align: center;
   padding: 4rem 2rem;
-  font-family: sans-serif;
+  font-family: "Assistant", sans-serif;
 }
 
 .categories-section h2 {
@@ -133,18 +133,17 @@ hr {
   font-size: 1.2rem;
   max-width: 700px;
   margin: 0 auto 2rem;
-  color: #333;
+  color: #4A2D2A;
 }
 
-.shop-all-btn {
+.button {
   background-color: #b15e42;
   color: white;
-  border: none;
   padding: 0.8rem 2rem;
   font-size: 1rem;
   cursor: pointer;
   margin-bottom: 3rem;
-  border: 1px solid #3b2d2b;
+  border-radius: 8px;
   transition: background-color 0.3s ease;
 }
 
@@ -157,6 +156,7 @@ hr {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  margin-top: 2.5rem;
 }
 
 .category-item {
@@ -192,7 +192,7 @@ hr {
     background-color: #EDE3D1;
     text-align: center;
     padding: 4rem 2rem;
-    font-family: "Assistant", sans-serif;
+    font-family: "Assistant", sans-serif
 }
 
 .arrivals h2 {
@@ -214,7 +214,7 @@ hr {
     background-color: #b15e42;
     color: white;
     padding: 0.8rem 2rem;
-    border: 1px solid #3b2d2b;
+    border-radius: 8px; 
     transition: background-color 0.3s ease;
     display: inline-block;
     margin-bottom: 3rem;
@@ -231,7 +231,7 @@ hr {
     gap: 2rem;
     max-width: 1100px;
     margin: 0 auto;
-    align-items: flex-start; /* so staggered offsets work */
+    align-items: flex-start; 
 }
 
 /* Card Styling */
@@ -256,7 +256,7 @@ hr {
     transform: translateY(-40px);
 }
 
-/* Fade-Up Animation */
+
 /* Floating animation keyframes */
 @keyframes floatUpDown {
     0%, 100% {
@@ -288,26 +288,110 @@ hr {
     animation-delay: 1.2s;
 }
 
-/* Middle card slightly higher to match Figma look */
+
 .arrivals .center-card {
     margin-top: -40px;
 }
 
+/*Our Product*/
+
+/* Section styling */
+.products-section {
+  padding: 60px 20px;
+  background-color: #EDE3D1; 
+  font-family: "Assistant", sans-serif; 
+  text-align: center;
+}
+
+.products-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.products-section p {
+  font-size: 16px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 24px;
+  color: #4A2D2A;
+}
+
+.products-section .button {
+  background-color: #b15e42;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 8px; 
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-bottom: 3rem;
+    text-decoration: none;
+}
+
+.products-section .button:hover {
+  background-color: #a6713f;
+}
+
+/* Grid styling */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+  margin-top: 40px;
+}
+
+/* Card styling */
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.6s ease, box-shadow 0.2s ease;
+  transform-style: preserve-3d;
+}
+
+.product-card:hover {
+  transform:rotateY(180deg); /* horizontal flip */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Text inside card */
+.product-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  transition: transform 0.6s ease;
+}
 
 
-
+.product-card .price {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #c28f5d;
+  transition: transform 0.6s ease;
+}
 /* Footer Styling */
 
 /* Footer Wrapper (newsletter +footer) */
 .footer-wrapper {
-    background-color: #f6ecdb; /* Same cream tone as footer */
+    background-color: #f6ecdb; 
     padding: 40px 20px;
 }
 
 /* Newsletter section */
 .newsletter {
     max-width: 1100px;
-    margin: 0 auto 40px auto; /* space below before footer links */
+    margin: 0 auto 40px auto;
 }
 
 .newsletter h3 {
