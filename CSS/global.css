@@ -20,7 +20,6 @@ body {
 
 /* Menu*/
    
-}
 .menu {
     background-color: #EDE3D1;
     padding-top: 2rem;
@@ -84,6 +83,7 @@ hr {
     padding-top: 1rem;
     left: 50%;
     right: 50%;
+    margin-bottom: 100px;
     
 }
 
@@ -145,10 +145,11 @@ hr {
   margin-bottom: 3rem;
   border-radius: 8px;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .shop-all-btn:hover {
-  background-color: #a04f35;
+  background-color: #7d8451;
 }
 
 .category-grid {
@@ -220,7 +221,7 @@ hr {
     text-decoration: none;
 }
 .arrivals .button:hover {
-    background-color: #a04f35;
+    background-color: #7d8451;
 }
 
 /* Grid Layout */
@@ -295,89 +296,96 @@ hr {
 /*Our Product*/
 
 /* Section styling */
+
 .products-section {
-  padding: 60px 20px;
-  background-color: #EDE3D1; 
-  font-family: "Assistant", sans-serif; 
+  background-color: #EDE3D1; /* same beige */
   text-align: center;
+  padding: 4rem 2rem;
+  font-family: "Assistant", sans-serif;
 }
 
 .products-section h2 {
-  font-size: 32px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 12px;
-  color: #000;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .products-section p {
-  font-size: 16px;
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto 24px;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
   color: #4A2D2A;
 }
 
 .products-section .button {
   background-color: #b15e42;
-    color: white;
-    padding: 0.8rem 2rem;
-    border-radius: 8px; 
-    transition: background-color 0.3s ease;
-    display: inline-block;
-    margin-bottom: 3rem;
-    text-decoration: none;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .products-section .button:hover {
-  background-color: #a6713f;
+  background-color: #7d8451;
 }
 
-/* Grid styling */
 .product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 32px;
-  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
 }
 
-/* Card styling */
 .product-card {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.6s ease, box-shadow 0.2s ease;
-  transform-style: preserve-3d;
+  background-color: white;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .product-card:hover {
-  transform:rotateY(180deg); /* horizontal flip */
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  transform: translateY(-5px);
 }
 
 .product-card img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 16px;
+  width: 100%;
+  height: 250px;
+  display: block;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
-/* Text inside card */
 .product-card h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  transition: transform 0.6s ease;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
 }
-
 
 .product-card .price {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: bold;
   color: #c28f5d;
-  transition: transform 0.6s ease;
+}
+
+/* === Responsive Media Queries === */
+@media (max-width: 768px) {
+  .product-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%;
+  }
 }
 /* Footer Styling */
 
@@ -427,7 +435,7 @@ hr {
 }
 
 .newsletter button:hover {
-    background-color: #6b3e3b;
+    background-color: #7d8451;
 }
 
 /* Footer links grid */
@@ -466,6 +474,34 @@ hr {
     letter-spacing: 1px;
 }
 
+/* === MEDIA QUERIES === */
+
+/* Tablets: 2 columns */
+@media (max-width: 992px) {
+    .arrivals .grid__3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .arrivals .center-card {
+        margin-top: 0; 
+    }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+    .arrivals .grid__3 {
+        grid-template-columns: 1fr;
+    }
+    .arrivals .center-card {
+        margin-top: 0;
+    }
+    .arrivals h2 {
+        font-size: 1.8rem;
+    }
+    .arrivals p {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+    }
+}
 
 
 
