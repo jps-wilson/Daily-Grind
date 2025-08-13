@@ -166,6 +166,7 @@ hr {
   width: 250px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  border-radius: 6px;
 }
 
 .category-item:hover {
@@ -298,10 +299,11 @@ hr {
 /* Section styling */
 
 .products-section {
-  background-color: #EDE3D1; /* same beige */
+  background-color: #EDE3D1; 
   text-align: center;
   padding: 4rem 2rem;
   font-family: "Assistant", sans-serif;
+
 }
 
 .products-section h2 {
@@ -348,6 +350,7 @@ hr {
   width: 250px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  border-radius: 6px;
 }
 
 .product-card:hover {
