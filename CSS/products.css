@@ -15,15 +15,19 @@
     --text: "Assistant", sans-serif;
     --title: "Montserrat Underline", sans-serif;
 
-    /* 
-    === Spacing ===
-    --space-xs: 0.25rem
+    /* === Spacing === */
+    --space-xs: 0.25rem;
     --space-sm: 0.5rem;
     --space-md: 1rem;
     --space-lg: 2rem;
     --space-xl: 3.5rem;
-    */
-}
+    
+    /* ==== Sizing ==== */
+    --size-xs: 0.25rem;
+    --size-sm: 0.5rem;
+    --size-md: 1rem;
+    --size-lg: 2rem;
+    --size-xl: 3.5rem;
 
 /* ======  GLOBAL RESET  ====== */
 body {
@@ -42,6 +46,7 @@ body {
     color: var(--bg-color);
     font-family: var(--text, sans-serif); 
     padding: 0.25rem 3.5rem; /* Top/bottom: 0.25rem , Left/right: 3.5rem */
+    font-size: var(--size-md);
    
 }
 .menu a,
@@ -51,24 +56,26 @@ body {
 .product-text p,
 .product-price-btn p {
     font-family: var(--text);
+
 }
 .menu {
     background-color: var(--bg-color);
-    padding: 1rem;
+    padding: 1rem; /* Add variable -> var(--space-xy) */
+    font-size: var(--size-md);
 }
 .menu img {
     border-radius: 50%;
     display: block;
     margin: 0 auto;
     width: 25%;
-    padding-top: 1rem; 
+    padding-top: 1rem; /* Add variable -> var(--space-xy) */
 }
 .menu ul {
     list-style-type: none;
     display: inline-flex;
-    gap: 1.5rem;
-    padding-top: 2rem;
-    margin-bottom: 0.25rem;
+    gap: 1.5rem; /* Add variable -> var(--space-xy) */
+    padding-top: 2rem; /* Add variable -> var(--space-xy) */
+    margin-bottom: 0.25rem; /* Add variable -> var(--space-xy) */
 }
 .menu a {
     text-decoration: none;
@@ -87,6 +94,7 @@ ul .current {
     border: none;
     color: var(--card-roast-text);
     outline: none;
+    padding-bottom: 1rem; /* Add variable -> var(--space-xy) */
 }
 .header-right {
     display: flex;
@@ -99,31 +107,31 @@ hr {
 }
 h1 {
     font-family: var(--title);
-    margin-left: 3rem;
-    margin-top: -0.5rem;
+    margin-left: 3rem; /* Add variable -> var(--space-xy) */
+    margin-top: -0.5rem; /* Add variable -> var(--space-xy) */
     padding-top: 0;
     color: var(--brown);
-    font-size: 6rem;
+    font-size: 6rem; /* Add variable -> var(--space-xy) */
     font-weight: 500; 
 }
 .description {
     font-family: var(--text);
-    margin-left: 3rem;
+    margin-left: 3rem; /* Add variable -> var(--space-xy) */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: -6rem;
+    margin-top: -6rem; /* Add variable -> var(--space-xy) */
     color: var(--brown);
 }
 .filters-row {
     display: flex;
     align-items: flex-start;
-    gap: 2rem;
-    margin-left: 3rem;
-    margin-top: 1rem;
+    gap: 2rem; /* Add variable -> var(--space-xy) */
+    margin-left: 3rem; /* Add variable -> var(--space-xy) */
+    margin-top: 1rem; /* Add variable -> var(--space-xy) */
 }
 .filters {
     display: inline-flex;
-    gap: 1.5rem;
+    gap: 1.5rem; /* Add variable -> var(--space-xy) */
     color: var(--brown);
 }
 .filters h5 {
@@ -133,11 +141,11 @@ h1 {
 }
 .categories {
     margin-left: 0;
-    margin-top: -2rem;
+    margin-top: -2rem; /* Add variable -> var(--space-xy) */
     color: var(--brown);
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 1rem; /* Add variable -> var(--space-xy) */
     align-items: center;
 }
 .categories input[type="checkbox"] {
@@ -149,12 +157,12 @@ h1 {
     height: 1.15rem;
     border: 0.15rem currentColor;
     border-radius: 0.15rem;
-    margin-right: 0.5rem;
+    margin-right: 0.5rem; /* Add variable -> var(--space-xy) */
 }
 .categories label {
     display: inline-block;
     margin-bottom: 0;
-    margin-right: 0.5rem;
+    margin-right: 0.5rem; /* Add variable -> var(--space-xy) */
 }
 .product-info {
     border-radius: 0 7px 7px 0;
@@ -168,14 +176,14 @@ h1 {
 }
 .product-text {
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 10px; /* Change to 'rem' */
     background-color: var(--card-bg);
     box-sizing: border-box;
 }
 .product-text h1 {
-    margin: 0 0 0 38px;
-    padding-top: 24px;
-    font-size: 28px;
+    margin: 0 0 0 38px; /* Change to 'rem' */
+    padding-top: 24px; /* Change to 'rem' */
+    font-size: 28px; /* Change to 'rem' */
     color: var(--brown);
     text-transform: uppercase;
 }
@@ -184,51 +192,51 @@ h1 {
     font-family: var(--title);
 }
 .product-text h2 {
-    margin: 0 0 47px 38px;
-    margin-bottom: 12px;
-    font-size: 13px;
+    margin: 0 0 47px 38px; /* Change to 'rem' */
+    margin-bottom: 12px; /* Change to 'rem' */
+    font-size: 13px; /* Change to 'rem' */
     font-family: var(--text);
     font-weight: 400;
     text-transform: uppercase;
     color: var(--card-roast-text);
-    letter-spacing: 0.2em;
+    letter-spacing: 0.2em; /* Double check 'em' meaning */
 }
 .product-text p {
     margin: 5px 0 0 38px;
     color: var(--card-text);
-    line-height: 1.7em;
-    font-size: 15px;
+    line-height: 1.7em; /* Double check 'em' meaning */
+    font-size: 15px; /* Change to 'rem' */
 }
 .product-price-btn {
     display: flex;
-    gap: 40px;
+    gap: 40px; /* Change to 'rem' */
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 25px 25px 0 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin: 25px 25px 0 25px; /* Change to 'rem' */
+    padding-top: 10px; /* Change to 'rem' */
+    padding-bottom: 10px; /* Change to 'rem' */
 }
 .product-price-btn p {
     margin: 0;
-    font-size: 28px;
+    font-size: 28px; /* Change to 'rem' */
     color: var(--orange);
 }
 .product-price-btn span {
     display: inline-block;
-    height: 50px;
+    height: 50px; /* Change to 'rem' */
     font-family: var(--text);
-    font-size: 34px;
+    font-size: 34px; /* Change to 'rem' */
 }
 .product-price-btn button {
-    height: 45px;
-    width: 150px;
+    height: 45px; /* Change to 'rem' */
+    width: 150px; /* Change to 'rem' */
     border: none;
-    border-radius: 60px;
+    border-radius: 60px; /* Change to 'rem' */
     font-family: var(--text);
-    font-size: 14px;
+    font-size: 14px; /* Change to 'rem' */
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.2em; /* 'em' is used here -> need to understand */
     color: #ffffff;
     background-color: var(--brown);
     cursor: pointer;
@@ -246,7 +254,7 @@ h1 {
     overflow: hidden;
     width: 100%;
     min-height: unset;
-    max-width: 400px;
+    max-width: 400px; /* Change to 'rem' */
     margin-left: auto;
     margin-right: auto;
 }
@@ -268,8 +276,10 @@ h1 {
 .product-text h1,
 .product-text h2,
 .product-text p {
-    margin-left: 18px;
+    margin-left: 18px; /* Change to 'rem' */
 }
+
+/* Have not reviewed past this point */
 
 /* ============ MEDIA QUERIES ============ */
 
