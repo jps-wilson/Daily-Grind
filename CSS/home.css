@@ -1,4 +1,5 @@
-/*Navigation Bar done by Jess*/
+
+/*this is the code for the home page */
 /* This is the code for importing the fonts */
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&display=swap');
 /* This is the code for the background color */
@@ -7,114 +8,8 @@ body {
     margin: 0;
     padding: 0;
 }
-:root {
-    /* === Colors === */
-    --bg-color: #EDE3D1;
-    --cream: #EDE3D1;
-    --brown: #4A2D2A;
-    --green: #7D8451;
-    --orange: #CB6D51;
-    --card-roast-text: grey;
-    --card-bg: #fff;
-    --card-text: #8d8d8d;
 
-    /* === Typography === */
-    --text: "Assistant", sans-serif;
-    --title: "Montserrat Underline", sans-serif;
-
-    /* === Spacing === */
-    --space-xs: 0.25rem;
-    --space-sm: 0.5rem;
-    --space-md: 1rem;
-    --space-lg: 2rem;
-    --space-xl: 3.5rem;
-    
-    /* ==== Sizing ==== */
-    --size-xs: 0.25rem;
-    --size-sm: 0.5rem;
-    --size-md: 1rem;
-    --size-lg: 2rem;
-    --size-xl: 3.5rem;
-}
-
-/* ======  GLOBAL RESET  ====== */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: var(--text);
-    color: var(--brown);
-    background-color: var(--bg-color);
-}
-/* ====== HEADER / TOP BAR ====== */
-.top-bar {
-    display: grid;
-    grid-auto-flow: column; /* Layout columns in a single horizontal row */
-    justify-content: space-between; /* Spread items across the row */
-    background-color: var(--brown);
-    color: var(--bg-color);
-    font-family: var(--text, sans-serif); 
-    padding: 0.25rem 3.5rem; /* Top/bottom: 0.25rem , Left/right: 3.5rem */
-    font-size: var(--size-md);
-   
-}
-.menu a,
-.menu input,
-.filters,
-.categories,
-.product-text p,
-.product-price-btn p {
-    font-family: var(--text);
-
-}
-.menu {
-    background-color: var(--bg-color);
-    padding: 1rem; /* Add variable -> var(--space-xy) */
-    font-size: var(--size-md);
-}
-.menu img {
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    width: 25%;
-    padding-top: 1rem; /* Add variable -> var(--space-xy) */
-}
-.menu ul {
-    list-style-type: none;
-    display: inline-flex;
-    gap: 1.5rem; /* Add variable -> var(--space-xy) */
-    padding-top: 2rem; /* Add variable -> var(--space-xy) */
-    margin-bottom: 0.25rem; /* Add variable -> var(--space-xy) */
-}
-.menu a {
-    text-decoration: none;
-    color: var(--brown);
-    font-family: var(--text);
-}
-.menu a:hover {
-    text-decoration: underline;
-}
-ul .current {
-    font-weight: bold;
-    text-decoration: underline;
-}
-.menu input {
-    background-color: var(--bg-color);
-    border: none;
-    color: var(--card-roast-text);
-    outline: none;
-    padding-bottom: 1rem; /* Add variable -> var(--space-xy) */
-}
-.header-right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-}
-hr {
-    margin-top: 0;
-}
-
-
+/* Hero Section*/
 .hero {
     position: relative;
     width: 100%;
@@ -243,96 +138,51 @@ hr {
   margin: 0;
 }
 
-/*add more css styling for body*/
-
-
-/* Footer Styling */
-
-/* Footer Wrapper (newsletter +footer) */
-.footer-wrapper {
-    background-color: #f6ecdb; /* Same cream tone as footer */
-    padding: 40px 20px;
+/*Brand Story*/
+.brand-story {
+  background-color: #EDE3D1;
+  padding: 4rem 2rem;
+  font-family: "Assistant", sans-serif;
+  text-align: center;
 }
 
-/* Newsletter section */
-.newsletter {
-    max-width: 1100px;
-    margin: 0 auto 40px auto; /* space below before footer links */
+.story-box {
+  background: #fff;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-.newsletter h3 {
-    font-size: 1.8rem;
-    color: #4a2c2a;
-    margin-bottom: 10px;
+.story-box h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #000;
 }
 
-.newsletter p {
-    color: #5a4a4a;
-    margin-bottom: 20px;
-    max-width: 500px;
+.story-box p {
+  font-size: 1.1rem;
+  color: #4A2D2A;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
-.newsletter form {
-    display: flex;
-    gap: 10px;
-    max-width: 500px;
-}
+/* Responsive */
+@media (max-width: 768px) {
+  .story-box {
+    padding: 1.5rem;
+  }
 
-.newsletter input[type="email"] {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
+  .story-box h2 {
+    font-size: 2rem;
+  }
 
-.newsletter button {
-    background-color: #4a2c2a;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
+  .story-box p {
+    font-size: 1rem;
+  }
 }
-
-.newsletter button:hover {
-    background-color: #6b3e3b;
-}
-
-/* Footer links grid */
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.footer-grid h4 {
-    font-size: 1.2rem;
-    color: #4a2c2a;
-    margin-bottom: 15px;
-}
-
-.footer-grid p {
-    color: #7b6f6f;
-    margin: 6px 0;
-    font-size: 0.95rem;
-    cursor: pointer;
-}
-
-.footer-grid p:hover {
-    color: #4a2c2a;
-}
-
-/* Copyright bar */
-.copyright {
-    background-color: #4a2c2a;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-}
-
 
 /* Latest Arrivals Section */
 .arrivals {
@@ -537,92 +387,6 @@ hr {
   }
 }
 
-/* Footer Styling */
-
-/* Footer Wrapper (newsletter +footer) */
-.footer-wrapper {
-    background-color: #f6ecdb; 
-    padding: 40px 20px;
-}
-
-/* Newsletter section */
-.newsletter {
-    max-width: 1100px;
-    margin: 0 auto 40px auto;
-}
-
-.newsletter h3 {
-    font-size: 1.8rem;
-    color: #4a2c2a;
-    margin-bottom: 10px;
-}
-
-.newsletter p {
-    color: #5a4a4a;
-    margin-bottom: 20px;
-    max-width: 500px;
-}
-
-.newsletter form {
-    display: flex;
-    gap: 10px;
-    max-width: 500px;
-}
-
-.newsletter input[type="email"] {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-.newsletter button {
-    background-color: #4a2c2a;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.newsletter button:hover {
-    background-color: #7d8451;
-}
-
-/* Footer links grid */
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.footer-grid h4 {
-    font-size: 1.2rem;
-    color: #4a2c2a;
-    margin-bottom: 15px;
-}
-
-.footer-grid p {
-    color: #7b6f6f;
-    margin: 6px 0;
-    font-size: 0.95rem;
-    cursor: pointer;
-}
-
-.footer-grid p:hover {
-    color: #4a2c2a;
-}
-
-/* Copyright bar */
-.copyright {
-    background-color: #4a2c2a;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-}
 /* === MEDIA QUERIES === */
 
 /* Tablets: 2 columns */
@@ -652,10 +416,4 @@ hr {
     }
 }
 
-
-
-
-
-
-
-
+/*test*/
