@@ -187,6 +187,51 @@ hr {
   margin: 0;
 }
 
+/*Brand Story*/
+.brand-story {
+  background-color: #EDE3D1;
+  padding: 4rem 2rem;
+  font-family: "Assistant", sans-serif;
+  text-align: center;
+}
+
+.story-box {
+  background: #fff;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.story-box h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.story-box p {
+  font-size: 1.1rem;
+  color: #4A2D2A;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .story-box {
+    padding: 1.5rem;
+  }
+
+  .story-box h2 {
+    font-size: 2rem;
+  }
+
+  .story-box p {
+    font-size: 1rem;
+  }
+}
 
 /* Latest Arrivals Section */
 .arrivals {
